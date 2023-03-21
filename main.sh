@@ -1,3 +1,9 @@
 #!/bin/bash
 
-curl http://stocklandlivestock.com/wp-content/uploads/2023/03/03.06.2023.pdf --output cattle_prices_2023-03-06.pdf
+day=06
+month=03
+year=2023
+url="http://stocklandlivestock.com/wp-content/uploads"
+
+
+curl ${url}/${year}/${month}/${month}.${day}.${year}.pdf --output cattle_prices_${year}-${month}-${day}.pdf
